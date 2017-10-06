@@ -1,7 +1,8 @@
 package com.algorythmic.tasks.hackerrank;
 
-import com.algorythmic.tasks.utils.Node;
-import com.algorythmic.tasks.utils.Tree;
+import com.algorythmic.tasks.model.BinaryTree;
+import com.algorythmic.tasks.model.Node;
+import com.algorythmic.tasks.utils.ExampleTree;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -9,7 +10,7 @@ import java.util.LinkedList;
 public class LevelOrderTree {
 
     public static void main(String[] args) {
-        BinaryTree exampleTree = Tree.createExampleTree();
+        BinaryTree exampleTree = ExampleTree.createExampleTree();
 
         new LevelOrderTree().levelOrder(exampleTree.getRoot());
     }
@@ -34,7 +35,7 @@ public class LevelOrderTree {
             addIfNotNull(queue, node.left);
             addIfNotNull(queue, node.right);
         }
-     }
+    }
 
     private void addIfNotNull(Deque<Node> queue, Node node) {
         if (node != null) {

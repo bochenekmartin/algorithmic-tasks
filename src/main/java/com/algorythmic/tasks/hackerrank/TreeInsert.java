@@ -1,12 +1,13 @@
 package com.algorythmic.tasks.hackerrank;
 
-import com.algorythmic.tasks.utils.Node;
-import com.algorythmic.tasks.utils.Tree;
+import com.algorythmic.tasks.model.BinaryTree;
+import com.algorythmic.tasks.model.Node;
+import com.algorythmic.tasks.utils.ExampleTree;
 
 public class TreeInsert {
 
     public static void main(String[] args) {
-        BinaryTree exampleTree = Tree.createExampleTree();
+        BinaryTree exampleTree = ExampleTree.createExampleTree();
         //todo insert
 
 
@@ -28,6 +29,7 @@ public class TreeInsert {
         inorder(r.getRight());
 
     }
+
     private void insert(Node node, int value) {
         if (node == null) return;
 
@@ -46,28 +48,6 @@ public class TreeInsert {
         }
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     private void insert2(Node node, int value) {

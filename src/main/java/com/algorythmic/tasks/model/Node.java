@@ -1,4 +1,4 @@
-package com.algorythmic.tasks.utils;
+package com.algorythmic.tasks.model;
 
 import com.google.common.base.MoreObjects;
 

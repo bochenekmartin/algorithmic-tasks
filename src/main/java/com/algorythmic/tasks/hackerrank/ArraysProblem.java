@@ -6,13 +6,13 @@ public class ArraysProblem {
 
         int arr[] = {12, 17, 70, 15, 22, 65, 21, 90};
         System.out.println("Original Array: ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        for (int anArr1 : arr) {
+            System.out.print(anArr1 + " ");
         }
         arr = separateEvenOddNumbers(arr);
         System.out.println("nArray after separating even and odd numbers : ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        for (int anArr : arr) {
+            System.out.print(anArr + " ");
         }
     }
 
@@ -31,10 +31,8 @@ public class ArraysProblem {
                 oddLastIdx++;
             }
         }
-        for (int i = 0; i < evenLastIdx; i++) {
-            int i1 = even[i];
-            arr[i] = i1;
-        }
+        System.arraycopy(even, 0, arr, 0, evenLastIdx);
+
         int counter = evenLastIdx;
         for (int i = 0; i < oddLastIdx; i++) {
             int i1 = odd[i];

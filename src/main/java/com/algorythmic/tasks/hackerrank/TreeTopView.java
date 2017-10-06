@@ -1,12 +1,13 @@
 package com.algorythmic.tasks.hackerrank;
 
-import com.algorythmic.tasks.utils.Node;
-import com.algorythmic.tasks.utils.Tree;
+import com.algorythmic.tasks.model.BinaryTree;
+import com.algorythmic.tasks.model.Node;
+import com.algorythmic.tasks.utils.ExampleTree;
 
 public class TreeTopView {
 
     public static void main(String[] args) {
-        BinaryTree exampleTree = Tree.createExampleTree();
+        BinaryTree exampleTree = ExampleTree.createExampleTree();
         new TreeTopView().topView(exampleTree.getRoot());
     }
 
@@ -17,7 +18,7 @@ public class TreeTopView {
       Node left;
       Node right;
   */
-    void topView(Node root) {
+    private void topView(Node root) {
         if (root == null) {
             return;
         }
@@ -31,7 +32,7 @@ public class TreeTopView {
 
     }
 
-    void leftTopView(Node root) {
+    private void leftTopView(Node root) {
         if (root == null) {
             return;
         }
@@ -40,7 +41,7 @@ public class TreeTopView {
 
     }
 
-    void rightTopView(Node root) {
+    private void rightTopView(Node root) {
         if (root == null) {
             return;
         }

@@ -1,19 +1,49 @@
 package com.algorythmic.tasks.hackerrank;
 
 
-import com.algorythmic.tasks.utils.Node;
+import com.algorythmic.tasks.model.BinaryTree;
+import com.algorythmic.tasks.model.Node;
+import com.algorythmic.tasks.utils.ExampleTree;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-public class BinaryTree {
+public class BinaryTreeMethods {
 
     private Node root;
 
-    public BinaryTree(int data) {
-        root = new Node(data);
+
+    public static void main(String args[]) {
+        BinaryTree bTree = ExampleTree.createExampleTree();
+        BinaryTreeMethods methods = new BinaryTreeMethods(bTree);
+        int height = methods.findHeight();
+        int heightNoRecursive = methods.findHeightNoRecursive();
+
+        System.out.println("height: " + height);
+        System.out.println("height no recursive: " + heightNoRecursive);
+        System.out.println("preorder: ");
+        methods.preorder();
+        System.out.println();
+        methods.preorderIter(bTree.getRoot());
+        System.out.println("\ninorder: ");
+        methods.inorder();
+        System.out.println("\ninorder iter: ");
+        methods.inorderIter(bTree.getRoot());
+        System.out.println("\npostorder: ");
+        methods.postorder();
+        System.out.println("\nlevel order: ");
+        methods.levelOrderTraversal(bTree.getRoot());
+        System.out.println("\nleafs: " + methods.numberOfLeafs(bTree.getRoot()));
+        methods.leafs(bTree.getRoot());
+        System.out.println("\nis BST: " + methods.checkBST(bTree.getRoot()));
+
+    }
+
+
+    public BinaryTreeMethods(BinaryTree tree) {
+        root = tree.getRoot();
     }
 
     public void addLeft(Node parent, Node child) {
@@ -22,10 +52,6 @@ public class BinaryTree {
 
     public void addRight(Node parent, Node child) {
         parent.setLeft(child);
-    }
-
-    public Node getRoot() {
-        return root;
     }
 
     int findHeight() {

@@ -1,12 +1,13 @@
 package com.algorythmic.tasks.hackerrank;
 
-import com.algorythmic.tasks.utils.Node;
-import com.algorythmic.tasks.utils.Tree;
+import com.algorythmic.tasks.model.BinaryTree;
+import com.algorythmic.tasks.model.Node;
+import com.algorythmic.tasks.utils.ExampleTree;
 
 public class PreorderTraversal {
 
     public static void main(String[] args) {
-        BinaryTree exampleTree = Tree.createExampleTree();
+        BinaryTree exampleTree = ExampleTree.createExampleTree();
     }
 
     void preOrder(Node root) {
@@ -15,7 +16,7 @@ public class PreorderTraversal {
         }
         int i = 1;
         if (i == 1)
-        System.out.print(root.getKey());
+            System.out.print(root.getKey());
         else {
             i++;
             System.out.println(" " + root.getKey());

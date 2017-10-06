@@ -1,8 +1,10 @@
 package com.algorythmic.tasks.utils;
 
-import com.algorythmic.tasks.hackerrank.BinaryTree;
+import com.algorythmic.tasks.model.BinaryTree;
+import com.algorythmic.tasks.model.Node;
 
-public class Tree {
+public class ExampleTree {
+
     public static BinaryTree createExampleTree() {
         Node n1 = new Node(5);
         Node n2 = new Node(17);
@@ -16,7 +18,6 @@ public class Tree {
         n2.setRight(n4);
         n1.setLeft(new Node(1));
         n1.setRight(new Node(8));
-
 
 
 /*

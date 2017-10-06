@@ -1,13 +1,9 @@
 package com.algorythmic.tasks.hackerrank;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-/**
- * Created by SG0212051 on 6/14/2017.
- */
 public class Panagram {
 
     public static void main(String[] args) {

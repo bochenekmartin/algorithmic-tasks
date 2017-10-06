@@ -2,7 +2,7 @@ package com.algorythmic.tasks.hackerrank;
 
 public class LeftArrayRotation {
 
-    static int[] leftRotation(int[] a, int d) {
+    private static int[] leftRotation(int[] a, int d) {
         int len = a.length;
         if (d > len) { //d=20, a=8 => 4
             d = d % len;

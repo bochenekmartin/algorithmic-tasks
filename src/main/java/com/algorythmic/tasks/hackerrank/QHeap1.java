@@ -1,15 +1,9 @@
 package com.algorythmic.tasks.hackerrank;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Scanner;
-import java.util.Set;
 import java.util.TreeSet;
 
 public class QHeap1 {
-
 
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
