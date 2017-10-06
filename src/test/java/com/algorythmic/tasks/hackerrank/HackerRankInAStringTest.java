@@ -3,11 +3,7 @@ package com.algorythmic.tasks.hackerrank;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
-/**
- * Created by SG0212051 on 8/27/2017.
- */
 public class HackerRankInAStringTest {
-
 
     @Test
     public void name() throws Exception {

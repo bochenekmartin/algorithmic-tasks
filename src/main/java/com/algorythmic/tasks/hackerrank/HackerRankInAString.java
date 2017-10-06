@@ -2,9 +2,7 @@ package com.algorythmic.tasks.hackerrank;
 
 import java.util.Scanner;
 
-
 public class HackerRankInAString {
-
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
