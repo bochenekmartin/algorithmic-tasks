@@ -1,4 +1,4 @@
-package com.algorythmic.tasks.hackerrank;
+package com.algorythmic.tasks.hackerrank.sorting;
 
 public class SelectionSort {
     public static void selectionSort(int[] arr){

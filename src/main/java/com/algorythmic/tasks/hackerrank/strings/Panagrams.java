@@ -1,10 +1,10 @@
-package com.algorythmic.tasks.hackerrank;
+package com.algorythmic.tasks.hackerrank.strings;
 
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class Panagram {
+public class Panagrams {
 
     public static void main(String[] args) {
         String out1 = "pangram";

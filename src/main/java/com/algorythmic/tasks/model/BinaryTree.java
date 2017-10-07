@@ -1,6 +1,5 @@
 package com.algorythmic.tasks.model;
 
-
 import com.google.common.base.MoreObjects;
 
 public class BinaryTree {

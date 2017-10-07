@@ -1,4 +1,4 @@
-package com.algorythmic.tasks.hackerrank;
+package com.algorythmic.tasks.hackerrank.strings;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Test;

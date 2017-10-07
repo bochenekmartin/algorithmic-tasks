@@ -1,8 +1,8 @@
-package com.algorythmic.tasks.hackerrank;
+package com.algorythmic.tasks.hackerrank.sorting;
 
 import java.util.Arrays;
 
-public class QuickSort {
+public class QuickSortMyImplementation {
 
     public static void main(String[] args) {
         int[] x = {9, 2, 4, 7, 3, 7, 10};
@@ -16,37 +16,29 @@ public class QuickSort {
     }
 
     private static void quickSort(int[] arr, int low, int high) {
-        if (arr == null || arr.length == 0 || low >= high)
+        if (arr == null || arr.length == 0 || low >= high) {
             return;
+        }
+        int mid = (high + low) / 2;
+        int pivot = arr[mid];
+        int i = low;
+        int j = high;
 
-        // pick the pivot
-        int middle = low + (high - low) / 2;
-        int pivot = arr[middle];
-
-        // make left < pivot and right > pivot
-        int i = low, j = high;
-        while (i <= j) {
+        while (i < j) {
             while (arr[i] < pivot) {
                 i++;
             }
-
             while (arr[j] > pivot) {
                 j--;
             }
-
             if (i <= j) {
                 swap(arr, i, j);
                 i++;
                 j--;
             }
         }
-
-        // recursively sort two sub parts
-        if (low < j)
-            quickSort(arr, low, j);
-
-        if (high > i)
-            quickSort(arr, i, high);
+        quickSort(arr, low, j);
+        quickSort(arr, i, high);
     }
 
     private static void swap(int[] arr, int i, int j) {

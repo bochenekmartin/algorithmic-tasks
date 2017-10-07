@@ -1,4 +1,4 @@
-package com.algorythmic.tasks.hackerrank;
+package com.algorythmic.tasks.hackerrank.trees;
 
 import com.algorythmic.tasks.model.BinaryTree;
 import com.algorythmic.tasks.model.Node;

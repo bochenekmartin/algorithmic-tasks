@@ -1,4 +1,4 @@
-package com.algorythmic.tasks.hackerrank;
+package com.algorythmic.tasks.hackerrank.sorting;
 
 public class InsertionSort {
     public static void main(String a[]){

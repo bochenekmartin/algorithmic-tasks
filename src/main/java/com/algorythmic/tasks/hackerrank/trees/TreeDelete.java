@@ -1,4 +1,4 @@
-package com.algorythmic.tasks.hackerrank;
+package com.algorythmic.tasks.hackerrank.trees;
 
 public class TreeDelete {
 

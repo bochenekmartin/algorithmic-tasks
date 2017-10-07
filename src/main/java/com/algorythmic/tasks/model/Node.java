@@ -3,6 +3,7 @@ package com.algorythmic.tasks.model;
 import com.google.common.base.MoreObjects;
 
 public class Node {
+
     public int data;
     public Node left;
     public Node right;

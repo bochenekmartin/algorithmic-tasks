@@ -1,4 +1,4 @@
-package com.algorythmic.tasks.hackerrank;
+package com.algorythmic.tasks.hackerrank.strings;
 
 import java.util.ArrayList;
 import java.util.HashSet;
