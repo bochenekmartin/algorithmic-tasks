@@ -2,6 +2,8 @@ package com.algorythmic.tasks.problems.leetcode.algorithms;
 
 import org.junit.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class AddTwoNumbersTest {
 
     @Test
@@ -19,9 +21,9 @@ public class AddTwoNumbersTest {
         AddTwoNumbers.ListNode result = new AddTwoNumbers().addTwoNumbers(n1, n2);
 
         //then
-        Assertions.assertThat(result.val).isEqualTo(7);
-        Assertions.assertThat(result.next.val).isEqualTo(0);
-        Assertions.assertThat(result.next.next.val).isEqualTo(8);
+        assertThat(result.val).isEqualTo(7);
+        assertThat(result.next.val).isEqualTo(0);
+        assertThat(result.next.next.val).isEqualTo(8);
     }
 
 }
