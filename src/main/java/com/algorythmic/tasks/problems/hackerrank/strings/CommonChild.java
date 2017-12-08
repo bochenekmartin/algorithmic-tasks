@@ -11,12 +11,12 @@ import java.util.Set;
  */
 public class CommonChild {
 
-    //tofo
+    //todo
 
     static int commonChild(String s1, String s2) {
         // Complete this function
         String s1Updated = withNoDuplicates(s1, s2);
-        if (s1Updated.length() == 0) {
+        if (s1Updated.isEmpty()) {
             return 0;
         }
         String s2Updated = withNoDuplicates(s2, s1Updated);
@@ -28,7 +28,6 @@ public class CommonChild {
         List<String> substrings = getSubstringsFromS1(s1);
         Set<String> set = new HashSet<>(s1.length() * 2);
         for (String s : substrings) {
-            System.out.println();
             if (s.length() == 1) {
                 substrings.add(s);
             } else {
@@ -41,14 +40,11 @@ public class CommonChild {
                         set.add(b.toString());
                         b.delete(0, b.length());
                     }
-//                    i.
                 }
             }
         }
 
-        int theLongest = 0;
-
-        return theLongest;
+        return 0;
     }
 
     private static List<String> getSubstringsFromS1(String s1) {

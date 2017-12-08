@@ -7,6 +7,9 @@ import java.util.Scanner;
 
 public class SherlockValidString {
 
+    private SherlockValidString() {
+    }
+
     static String isValid(String s) {
         // Complete this function
         Map<Character, Integer> calc = new HashMap<>(45);
@@ -27,7 +30,7 @@ public class SherlockValidString {
         return diffs > 1 ? "NO" : "YES";
     }
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         Scanner in = new Scanner(System.in);
         String s = in.next();
         String result = isValid(s);

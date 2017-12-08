@@ -5,6 +5,7 @@ package com.algorythmic.tasks.problems.projecteuler;
  * Date: Oct 21, 2010
  */
 public class Problem001 {
+
     public static void main(String[] args) {
         int sum = 0;
         for (int i = 3; i <= 999; i++) {
