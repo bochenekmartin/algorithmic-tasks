@@ -2,6 +2,9 @@ package com.algorythmic.tasks.problems.hackerrank.trees;
 
 public class TreeDelete {
 
+    private TreeDelete() {
+    }
+
     public static class TreeNode {
         int data;
         TreeNode left;
@@ -23,16 +26,17 @@ public class TreeDelete {
 
     // Get minimum element in binary search tree
     public static TreeNode minimumElement(TreeNode root) {
-        if (root.left == null)
+        if (root.left == null) {
             return root;
-        else {
+        } else {
             return minimumElement(root.left);
         }
     }
 
     public static TreeNode deleteNode(TreeNode root, int value) {
-        if (root == null)
+        if (root == null) {
             return null;
+        }
         if (root.data > value) {
             root.left = deleteNode(root.left, value);
         } else if (root.data < value) {
@@ -57,8 +61,9 @@ public class TreeDelete {
                 root = root.right;
             }
             // if nodeToBeDeleted do not have child (Leaf node)
-            else
+            else {
                 root = null;
+            }
         }
         return root;
     }
@@ -70,27 +75,31 @@ public class TreeDelete {
         }
 
         if (root.data > nodeToBeInserted.data) {
-            if (root.left == null)
+            if (root.left == null) {
                 root.left = nodeToBeInserted;
-            else
+            } else {
                 insert(root.left, nodeToBeInserted);
-        } else if (root.data < nodeToBeInserted.data)
-            if (root.right == null)
+            }
+        } else if (root.data < nodeToBeInserted.data) {
+            if (root.right == null) {
                 root.right = nodeToBeInserted;
-            else
+            } else {
                 insert(root.right, nodeToBeInserted);
+            }
+        }
         return root;
     }
 
     public static void inOrder(TreeNode root) {
-        if (root == null)
+        if (root == null) {
             return;
+        }
         inOrder(root.left);
         System.out.print(root.data + " ");
         inOrder(root.right);
     }
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
 
         // Creating a binary search tree
         TreeNode rootNode = createBinarySearchTree();

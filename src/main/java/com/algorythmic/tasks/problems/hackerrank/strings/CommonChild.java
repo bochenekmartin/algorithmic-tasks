@@ -7,6 +7,8 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class CommonChild {
+    private CommonChild() {
+    }
 
     //todo
 
@@ -63,7 +65,7 @@ public class CommonChild {
         return b.toString();
     }
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         Scanner in = new Scanner(System.in);
         String s1 = "ABCDEF";
         //in.next();

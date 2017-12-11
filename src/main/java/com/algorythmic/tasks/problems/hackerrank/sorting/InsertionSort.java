@@ -1,7 +1,10 @@
 package com.algorythmic.tasks.problems.hackerrank.sorting;
 
 public class InsertionSort {
-    public static void main(String a[]){
+    private InsertionSort() {
+    }
+
+    public static void main(String... a){
         int[] arr1 = {9,14,3,2,43,11,58,22};
         System.out.println("Before Insertion Sort");
         for(int i:arr1){
@@ -16,7 +19,7 @@ public class InsertionSort {
             System.out.print(i+" ");
         }
     }
-    public static void insertionSort(int array[]) {
+    public static void insertionSort(int... array) {
         int n = array.length;
         for (int j = 1; j < n; j++) {
             int key = array[j];

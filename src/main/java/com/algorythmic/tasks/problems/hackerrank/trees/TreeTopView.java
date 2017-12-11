@@ -6,7 +6,7 @@ import com.algorythmic.tasks.problems.hackerrank.trees.utils.ExampleTree;
 
 public class TreeTopView {
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         BinaryTree exampleTree = ExampleTree.createExampleTree();
         new TreeTopView().topView(exampleTree.getRoot());
     }

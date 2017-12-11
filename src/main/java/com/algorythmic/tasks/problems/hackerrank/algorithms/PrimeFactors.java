@@ -5,6 +5,9 @@ import java.util.List;
 
 public class PrimeFactors {
 
+    private PrimeFactors() {
+    }
+
     public static List<Integer> primeFactors(int number) {
         int n = number;
         List<Integer> factors = new LinkedList<>();
@@ -17,7 +20,7 @@ public class PrimeFactors {
         return factors;
     }
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         System.out.println("Primefactors of 44");
         for (Integer integer : primeFactors(44)) {
             System.out.println(integer);

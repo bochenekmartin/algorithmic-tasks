@@ -9,13 +9,13 @@ public class Node {
     public Node right;
 
     public Node(int key) {
-        this.data = key;
+        data = key;
         right = null;
         left = null;
     }
 
     public void setKey(int key) {
-        this.data = key;
+        data = key;
     }
 
     public int getKey() {

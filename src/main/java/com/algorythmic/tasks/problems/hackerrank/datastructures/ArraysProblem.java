@@ -2,9 +2,9 @@ package com.algorythmic.tasks.problems.hackerrank.datastructures;
 
 public class ArraysProblem {
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
 
-        int arr[] = {12, 17, 70, 15, 22, 65, 21, 90};
+        int[] arr = {12, 17, 70, 15, 22, 65, 21, 90};
         System.out.println("Original Array: ");
         for (int anArr1 : arr) {
             System.out.print(anArr1 + " ");
@@ -16,7 +16,7 @@ public class ArraysProblem {
         }
     }
 
-    private static int[] separateEvenOddNumbers(int[] arr) {
+    private static int[] separateEvenOddNumbers(int... arr) {
         int[] odd = new int[arr.length];
         int[] even = new int[arr.length];
         int oddLastIdx = 0;

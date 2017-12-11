@@ -6,7 +6,7 @@ import com.algorythmic.tasks.problems.hackerrank.trees.utils.ExampleTree;
 
 public class TreeInsert {
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         BinaryTree exampleTree = ExampleTree.createExampleTree();
         //todo insert
 
@@ -23,7 +23,9 @@ public class TreeInsert {
     }
 
     private void inorder(Node r) {
-        if (r == null) return;
+        if (r == null) {
+            return;
+        }
         inorder(r.getLeft());
         System.out.print(r.data() + " ");
         inorder(r.getRight());
@@ -31,7 +33,9 @@ public class TreeInsert {
     }
 
     private void insert(Node node, int value) {
-        if (node == null) return;
+        if (node == null) {
+            return;
+        }
 
         if (value < node.data) {
             if (node.left == null) {

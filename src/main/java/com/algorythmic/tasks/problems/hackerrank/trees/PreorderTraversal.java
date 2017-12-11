@@ -6,7 +6,7 @@ import com.algorythmic.tasks.problems.hackerrank.trees.utils.ExampleTree;
 
 public class PreorderTraversal {
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         BinaryTree exampleTree = ExampleTree.createExampleTree();
     }
 
@@ -15,9 +15,9 @@ public class PreorderTraversal {
             return;
         }
         int i = 1;
-        if (i == 1)
+        if (i == 1) {
             System.out.print(root.getKey());
-        else {
+        } else {
             i++;
             System.out.println(" " + root.getKey());
         }
@@ -25,7 +25,7 @@ public class PreorderTraversal {
         preOrder(root.getRight());
     }
 
-    static boolean b = true;
+    static boolean booleanFlag = true;
 
     void postOrder(Node root) {
         if (root == null) {
@@ -33,8 +33,8 @@ public class PreorderTraversal {
         }
         postOrder(root.left);
         postOrder(root.right);
-        if (b) {
-            b = false;
+        if (booleanFlag) {
+            booleanFlag = false;
             System.out.print(root.data);
         } else {
             System.out.print(" " + root.data);

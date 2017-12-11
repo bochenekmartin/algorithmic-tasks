@@ -12,10 +12,10 @@ import java.util.List;
 
 public class BinaryTreeMethods {
 
-    private Node root;
+    private final Node root;
 
 
-    public static void main(String args[]) {
+    public static void main(String... args) {
         BinaryTree bTree = ExampleTree.createExampleTree();
         BinaryTreeMethods methods = new BinaryTreeMethods(bTree);
         int height = methods.findHeight();
@@ -30,7 +30,7 @@ public class BinaryTreeMethods {
         System.out.println("\ninorder: ");
         methods.inorder();
         System.out.println("\ninorder iter: ");
-        methods.inorderIter(bTree.getRoot());
+//        methods.inorderIter(bTree.getRoot());
         System.out.println("\npostorder: ");
         methods.postorder();
         System.out.println("\nlevel order: ");
@@ -105,27 +105,6 @@ public class BinaryTreeMethods {
             }
 
         }
-    }
-
-    void inorderIter(Node root) {
-//        if (root == null) {
-//            return;
-//        }
-//        Deque<Node> stack = new ArrayDeque<>();
-//        stack.push(root);
-//
-//        while (!stack.isEmpty()) {
-//            Node n = stack.peek();
-//            System.out.printf("%d ", n.getKey());
-//            if (n.getRight() != null) {
-//                stack.push(n.getRight());
-//            }
-//            if (n.getLeft() != null) {
-//                stack.push(n.getLeft());
-//            }
-//
-//
-//        }
     }
 
     public void postorder() {

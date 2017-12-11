@@ -4,7 +4,7 @@ import com.google.common.base.MoreObjects;
 
 public class BinaryTree {
 
-    private Node root;
+    private final Node root;
 
     public BinaryTree(int data) {
         root = new Node(data);

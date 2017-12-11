@@ -1,7 +1,10 @@
 package com.algorythmic.tasks.problems.hackerrank.sorting;
 
 public class SelectionSort {
-    public static void selectionSort(int[] arr){
+    private SelectionSort() {
+    }
+
+    public static void selectionSort(int... arr){
         for (int i = 0; i < arr.length - 1; i++)
         {
             int index = i;
@@ -16,7 +19,7 @@ public class SelectionSort {
         }
     }
 
-    public static void main(String a[]){
+    public static void main(String... a){
         int[] arr1 = {9,14,3,2,43,11,58,22};
         System.out.println("Before Selection Sort");
         for(int i:arr1){

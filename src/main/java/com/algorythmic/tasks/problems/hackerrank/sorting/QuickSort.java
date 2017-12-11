@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class QuickSort {
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         int[] x = {9, 2, 4, 7, 3, 7, 10};
         System.out.println(Arrays.toString(x));
 
@@ -16,8 +16,9 @@ public class QuickSort {
     }
 
     private static void quickSort(int[] arr, int low, int high) {
-        if (arr == null || arr.length == 0 || low >= high)
+        if (arr == null || arr.length == 0 || low >= high) {
             return;
+        }
 
         // pick the pivot
         int middle = low + (high - low) / 2;
@@ -42,11 +43,13 @@ public class QuickSort {
         }
 
         // recursively sort two sub parts
-        if (low < j)
+        if (low < j) {
             quickSort(arr, low, j);
+        }
 
-        if (high > i)
+        if (high > i) {
             quickSort(arr, i, high);
+        }
     }
 
     private static void swap(int[] arr, int i, int j) {

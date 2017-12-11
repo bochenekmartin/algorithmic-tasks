@@ -5,6 +5,9 @@ import com.algorythmic.tasks.model.Node;
 
 public class ExampleTree {
 
+    private ExampleTree() {
+    }
+
     public static BinaryTree createExampleTree() {
         Node n1 = new Node(5);
         Node n2 = new Node(17);

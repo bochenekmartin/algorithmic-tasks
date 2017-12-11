@@ -17,7 +17,7 @@ public class LeftArrayRotation {
         // Complete this function
     }
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         int n = 5;
         int d = 7;
         int[] a = {1,2,3,4,5};

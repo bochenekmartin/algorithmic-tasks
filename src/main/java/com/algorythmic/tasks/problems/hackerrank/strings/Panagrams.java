@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class Panagrams {
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         String out1 = "pangram";
         String out2 = "not pangram";
         Scanner in = new Scanner(System.in);

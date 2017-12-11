@@ -9,7 +9,7 @@ import java.util.LinkedList;
 
 public class LevelOrderTree {
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         BinaryTree exampleTree = ExampleTree.createExampleTree();
 
         new LevelOrderTree().levelOrder(exampleTree.getRoot());
