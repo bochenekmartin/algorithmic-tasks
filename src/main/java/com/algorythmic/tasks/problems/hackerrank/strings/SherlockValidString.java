@@ -25,8 +25,6 @@ public class SherlockValidString {
                 diffs++;
             }
         }
-
-
         return diffs > 1 ? "NO" : "YES";
     }
 

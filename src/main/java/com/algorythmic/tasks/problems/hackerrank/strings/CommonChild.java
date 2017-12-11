@@ -6,9 +6,6 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
-/**
- * Created by SG0212051 on 8/27/2017.
- */
 public class CommonChild {
 
     //todo

@@ -1,9 +1,5 @@
 package com.algorythmic.tasks.problems.leetcode.algorithms;
 
-/*
- * Created by SG0212051 on 10/7/2017.
- */
-
 //1
 
 public class TwoSum {
