@@ -1,6 +1,6 @@
 package com.algorythmic.tasks.problems.hackerrank.strings;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Set;
 

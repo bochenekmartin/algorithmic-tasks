@@ -1,6 +1,7 @@
 package com.algorythmic.tasks.problems.leetcode.algorithms;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

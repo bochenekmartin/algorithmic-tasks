@@ -1,12 +1,12 @@
 package com.algorythmic.tasks.problems.hackerrank.strings;
 
 import org.assertj.core.api.Assertions;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 public class CommonChildTest {
 
-    @Ignore("not finished")
+    @Disabled
     @Test
     public void commonChild() throws Exception {
         Assertions.assertThat(CommonChild.commonChild("SHINCHAN", "NOHARAAA")).isEqualTo(3);
