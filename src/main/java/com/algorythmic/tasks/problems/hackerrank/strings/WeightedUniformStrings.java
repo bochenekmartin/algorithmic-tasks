@@ -1,13 +1,22 @@
 package com.algorythmic.tasks.problems.hackerrank.strings;
 
-import java.util.*;
+
+import com.google.common.collect.Maps;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
 
 public class WeightedUniformStrings {
 
     private static final String YES = "Yes";
     private static final String NO = "No";
 
-    private static final Map<Character, Integer> WEIGHTS = new HashMap<>();
+    private static final Map<Character, Integer> WEIGHTS = new HashMap<>((int) ((float) 100 / 0.75F + 1.0F));
 
     static {
         for (int i = 0; i <= 25; i++) {
@@ -55,7 +64,7 @@ public class WeightedUniformStrings {
             }
         }
 
-       return weights;
+        return weights;
     }
 
     private int calculateWeight(char c, int len) {
