@@ -9,7 +9,7 @@
     <version>1.0</version>
 
     <properties>
-        <jdk.version>1.8</jdk.version>
+        <jdk.version>1.9</jdk.version>
         <log4j-api.version>2.10.0</log4j-api.version>
         <slf4j-api.version>1.7.25</slf4j-api.version>
         <guava.version>23.5-jre</guava.version>
