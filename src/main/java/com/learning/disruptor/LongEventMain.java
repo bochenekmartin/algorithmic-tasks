@@ -40,7 +40,7 @@ public class LongEventMain {
         RingBuffer<LongEvent> ringBuffer = disruptor.getRingBuffer();
 
         ByteBuffer bb = ByteBuffer.allocate(8);
-        for (long l = 0; true; l++)
+        for (long l = 0; l < Long.MAX_VALUE; l++)
         {
             bb.putLong(0, l);
             ringBuffer.publishEvent(LongEventMain::translate, bb);
