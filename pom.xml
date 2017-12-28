@@ -12,12 +12,17 @@
         <jdk.version>1.9</jdk.version>
         <log4j-api.version>2.10.0</log4j-api.version>
         <slf4j-api.version>1.7.25</slf4j-api.version>
-        <guava.version>23.5-jre</guava.version>
+        <guava.version>23.6-jre</guava.version>
         <junit-jupiter-engine.version>5.0.2</junit-jupiter-engine.version>
         <junit-platform-launcher.version>1.0.2</junit-platform-launcher.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>3.3.7</version>
+        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
