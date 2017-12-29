@@ -1,18 +1,26 @@
 package com.learning.disruptor;
 
+import com.lmax.disruptor.EventProcessor;
 import com.lmax.disruptor.RingBuffer;
+import com.lmax.disruptor.Sequence;
 import com.lmax.disruptor.dsl.Disruptor;
 
 import java.nio.ByteBuffer;
-import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadFactory;
 
 public class LongEventMain {
 
-    public static void handleEvent(LongEvent event, long sequence, boolean endOfBatch)
+    public static void handleEvent1(LongEvent event, long sequence, boolean endOfBatch)
     {
         System.out.println(event);
     }
+
+    public static void handleEvent2(LongEvent event, long sequence, boolean endOfBatch)
+    {
+        System.out.println(event + " 2");
+    }
+
 
     public static void translate(LongEvent event, long sequence, ByteBuffer buffer)
     {
@@ -22,7 +30,8 @@ public class LongEventMain {
     public static void main(String[] args) throws Exception
     {
         // Executor that will be used to construct new threads for consumers
-        Executor executor = Executors.newCachedThreadPool();
+//        Executor executor = Executors.newCachedThreadPool();
+        ThreadFactory executor = Executors.defaultThreadFactory();
 
         // Specify the size of the ring buffer, must be power of 2.
         int bufferSize = 1024;
@@ -31,7 +40,7 @@ public class LongEventMain {
         Disruptor<LongEvent> disruptor = new Disruptor<>(LongEvent::new, bufferSize, executor);
 
         // Connect the handler
-        disruptor.handleEventsWith(LongEventMain::handleEvent);
+        disruptor.handleEventsWith(LongEventMain::handleEvent2).then(LongEventMain::handleEvent1);
 
         // Start the Disruptor, starts all threads running
         disruptor.start();
@@ -44,7 +53,7 @@ public class LongEventMain {
         {
             bb.putLong(0, l);
             ringBuffer.publishEvent(LongEventMain::translate, bb);
-            Thread.sleep(500);
+            Thread.sleep(200);
         }
     }
 }
