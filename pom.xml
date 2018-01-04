@@ -20,6 +20,8 @@
         <guava.version>23.6-jre</guava.version>
         <junit-jupiter-engine.version>5.0.2</junit-jupiter-engine.version>
         <junit-platform-launcher.version>1.0.2</junit-platform-launcher.version>
+
+        <disruptor.version>3.3.7</disruptor.version>
     </properties>
 
     <dependencyManagement>
