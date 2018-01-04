@@ -11,8 +11,6 @@ public class LongEvent {
 
     @Override
     public String toString() {
-        return "LongEvent{" +
-                "value=" + value +
-                '}';
+        return "val=" + value;
     }
 }
