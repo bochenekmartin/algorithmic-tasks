@@ -12,7 +12,6 @@ import java.util.concurrent.Executors;
 
 public class LongEventMain {
 
-    private static final long LIMIT = 1500L;
     private static List<String> results = Collections.synchronizedList(new ArrayList<>());
 
     public static void handleEvent1(LongEvent event, long sequence, boolean endOfBatch) {
@@ -30,10 +29,10 @@ public class LongEventMain {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        LongEventMain.runTheDisruptorMagic(LIMIT);
+        new LongEventMain().runTheDisruptorMagic(1500L);
     }
 
-    static void runTheDisruptorMagic(long limit) throws InterruptedException {
+    void runTheDisruptorMagic(long limit) throws InterruptedException {
         // Executor that will be used to construct new threads for consumers
         Executor executor = Executors.newCachedThreadPool();
 //        ThreadFactory executor = Executors.defaultThreadFactory();
@@ -54,7 +53,7 @@ public class LongEventMain {
         RingBuffer<LongEvent> ringBuffer = disruptor.getRingBuffer();
 
         ByteBuffer bb = ByteBuffer.allocate(8);
-        for (long l = 1; l <= LIMIT; l++) {
+        for (long l = 1; l <= limit; l++) {
             bb.putLong(0, l);
             ringBuffer.publishEvent(LongEventMain::translate, bb);
 //            Thread.sleep(10);
@@ -62,11 +61,11 @@ public class LongEventMain {
 
         //wait for events consumption
         Thread.sleep(100);
-        disruptor.halt();
-        disruptor.shutdown();
+//        disruptor.halt();
+//        disruptor.shutdown();
     }
 
-    public static List<String> getResults() {
+    public List<String> getResults() {
         return results;
     }
 }

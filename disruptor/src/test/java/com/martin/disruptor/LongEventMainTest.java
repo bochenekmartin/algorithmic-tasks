@@ -3,15 +3,22 @@ package com.martin.disruptor;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 class LongEventMainTest {
 
+    private LongEventMain underTest = new LongEventMain();
+
     @Test
     void runTheMagic() throws InterruptedException {
+        //given
         int limit = 1500;
+        assertTrue(underTest.getResults().isEmpty());
 
-        LongEventMain.runTheDisruptorMagic(limit);
+        //when
+        underTest.runTheDisruptorMagic(limit);
 
-        assertEquals(limit * 2, LongEventMain.getResults().size());
+        //then
+        assertEquals(limit * 2, underTest.getResults().size());
     }
 }
