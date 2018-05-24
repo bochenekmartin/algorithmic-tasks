@@ -10,6 +10,7 @@
     <modules>
         <module>algorythms</module>
         <module>disruptor</module>
+        <module>jmh</module>
     </modules>
     <packaging>pom</packaging>
 
