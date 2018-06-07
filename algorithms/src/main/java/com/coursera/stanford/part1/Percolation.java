@@ -1,4 +1,4 @@
-package com.stanford.part1;
+package com.coursera.stanford.part1;
 
 public class Percolation {
 
