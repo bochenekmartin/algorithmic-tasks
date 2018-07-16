@@ -8,7 +8,9 @@
     <artifactId>learning</artifactId>
     <version>1.0</version>
     <modules>
-        <module>algorithms</module>
+        <module>algorythms</module>
+        <module>disruptor</module>
+        <module>jmh</module>
     </modules>
     <packaging>pom</packaging>
 
