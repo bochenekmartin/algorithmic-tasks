@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-public class TwoSumTest {
+public class P01_TwoSumTest {
 
     @Test
     public void twoSum() throws Exception {
@@ -13,7 +13,7 @@ public class TwoSumTest {
         List<Integer> input = List.of(2, 7, 11, 15);
 
         //when
-        int[] result = new TwoSum().twoSum(input, 9);
+        int[] result = new P01_TwoSum().twoSum(input, 9);
 
         //then
         Assertions.assertThat(result[0]).isEqualTo(0);

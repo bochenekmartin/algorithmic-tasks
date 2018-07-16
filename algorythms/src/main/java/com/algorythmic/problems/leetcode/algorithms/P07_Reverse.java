@@ -2,7 +2,7 @@ package com.algorythmic.problems.leetcode.algorithms;
 
 //7
 
-public class Reverse {
+public class P07_Reverse {
 
     public int reverse(int x) {
         String parsed = Integer.toString(x);

@@ -4,7 +4,7 @@ package com.algorythmic.problems.leetcode.algorithms;
 
 import java.util.List;
 
-public class TwoSum {
+public class P01_TwoSum {
 
     public int[] twoSum(List<Integer> numsArg, int target) {
         Integer[] ints = new Integer[numsArg.size()];

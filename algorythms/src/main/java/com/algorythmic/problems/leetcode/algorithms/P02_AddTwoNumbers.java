@@ -3,7 +3,7 @@ package com.algorythmic.problems.leetcode.algorithms;
 import java.math.BigInteger;
 
 //2
-public class AddTwoNumbers {
+public class P02_AddTwoNumbers {
 
     /**
      * Definition for singly-linked list.

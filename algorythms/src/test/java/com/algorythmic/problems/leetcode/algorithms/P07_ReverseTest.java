@@ -7,9 +7,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ReverseTest {
+public class P07_ReverseTest {
 
-    final Reverse underTest = new Reverse();
+    final P07_Reverse underTest = new P07_Reverse();
 
     @Test
     public void reverse() throws Exception {
