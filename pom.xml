@@ -14,12 +14,13 @@
 
     <properties>
         <jdk.version>1.9</jdk.version>
-        <log4j-api.version>2.11.0</log4j-api.version>
+        <log4j-api.version>2.10.0</log4j-api.version>
         <slf4j-api.version>1.7.25</slf4j-api.version>
-        <guava.version>25.1-jre</guava.version>
+        <guava.version>23.6-jre</guava.version>
         <junit-jupiter-engine.version>5.0.2</junit-jupiter-engine.version>
         <junit-platform-launcher.version>1.0.2</junit-platform-launcher.version>
 
+        <disruptor.version>3.3.7</disruptor.version>
     </properties>
 
     <dependencyManagement>
