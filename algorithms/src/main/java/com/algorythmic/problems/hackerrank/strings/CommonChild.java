@@ -1,10 +1,6 @@
 package com.algorythmic.problems.hackerrank.strings;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 public class CommonChild {
     private CommonChild() {
