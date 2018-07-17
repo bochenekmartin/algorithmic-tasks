@@ -8,9 +8,10 @@
     <artifactId>learning</artifactId>
     <version>1.0</version>
     <modules>
-        <module>algorithms</module>
-        <module>disruptor</module>
+        <module>hackerrank</module>
+        <module>projecteuler</module>
         <module>jmh</module>
+        <module>leetcode</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -22,7 +23,6 @@
         <junit-jupiter-engine.version>5.0.2</junit-jupiter-engine.version>
         <junit-platform-launcher.version>1.0.2</junit-platform-launcher.version>
 
-        <disruptor.version>3.3.7</disruptor.version>
     </properties>
 
     <dependencyManagement>
