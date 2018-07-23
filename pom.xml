@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.bochenek.martin</groupId>
-    <artifactId>learning</artifactId>
+    <artifactId>algorythmic-tasks</artifactId>
     <version>1.0</version>
     <modules>
         <module>hackerrank</module>
