@@ -1,68 +1,27 @@
 package com.algorithmic.problems.strings;
 
-import java.util.*;
-
 public class CommonChild {
-    private CommonChild() {
-    }
 
-    //todo
+    //todo understand it
 
     static int commonChild(String s1, String s2) {
-        // Complete this function
-        String s1Updated = withNoDuplicates(s1, s2);
-        if (s1Updated.isEmpty()) {
-            return 0;
-        }
-        String s2Updated = withNoDuplicates(s2, s1Updated);
-
-        return getStrings(s1Updated, s2Updated);
-    }
-
-    private static int getStrings(String s1, String s2) {
-        List<String> substrings = getSubstringsFromS1(s1);
-        Set<String> set = new HashSet<>(s1.length() * 2);
-        for (String s : substrings) {
-            if (s.length() == 1) {
-                substrings.add(s);
-            } else {
-                StringBuilder b = new StringBuilder(s.length());
-                char[] chars = s.toCharArray();
-                String s2substr;
-                for (char c : chars) {
-                    int i = s2.indexOf(c);
-                    if (i == -1) {
-                        set.add(b.toString());
-                        b.delete(0, b.length());
-                    }
+        int length1 = s1.length();
+        int length2 = s2.length();
+        int[][] commonLengths = new int[length1 + 1][length2 + 1];
+        for (int i = 1; i <= length1; i++) {
+            for (int j = 1; j <= length2; j++) {
+                if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
+                    commonLengths[i][j] = commonLengths[i - 1][j - 1] + 1;
+                } else {
+                    commonLengths[i][j] = Math.max(commonLengths[i - 1][j], commonLengths[i][j - 1]);
                 }
             }
         }
-
-        return 0;
-    }
-
-    private static List<String> getSubstringsFromS1(String s1) {
-        List<String> s = new ArrayList<>(s1.length());
-        for (int i = 0; i < s1.length(); i++) {
-            s.add(s1.substring(i));
-        }
-        return s;
-    }
-
-    private static String withNoDuplicates(String s1, String s2) {
-        StringBuilder b = new StringBuilder(s1.length());
-        char[] chars = s1.toCharArray();
-        for (char c : chars) {
-            if (s2.contains(Character.toString(c))) {
-                b.append(c);
-            }
-        }
-        return b.toString();
+        return commonLengths[length1][length2];
     }
 
     public static void main(String... args) {
-        Scanner in = new Scanner(System.in);
+//        Scanner in = new Scanner(System.in);
         String s1 = "ABCDEF";
         //in.next();
         String s2 = "FBDAMN";//in.next();

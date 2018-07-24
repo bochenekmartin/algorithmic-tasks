@@ -1,8 +1,8 @@
-package com.martin.jmh;
+package com.experiments.jmh;
 
 import org.openjdk.jmh.annotations.Benchmark;
 
-public class MyBenchmark {
+public class MyJmhBenchmark {
 
     @Benchmark
     public void testMethod() {

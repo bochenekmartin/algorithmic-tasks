@@ -1,18 +1,17 @@
 package com.algorithmic.problems.strings;
 
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class CommonChildTest {
 
-    @Disabled
     @Test
-    public void commonChild() throws Exception {
-        Assertions.assertThat(CommonChild.commonChild("SHINCHAN", "NOHARAAA")).isEqualTo(3);
-        Assertions.assertThat(CommonChild.commonChild("ABCDEF", "FBDAMN")).isEqualTo(2);
-        Assertions.assertThat(CommonChild.commonChild("HARRY", "SALLY")).isEqualTo(2);
-        Assertions.assertThat(CommonChild.commonChild("AA", "BB")).isEqualTo(0);
+    void commonChild() {
+        assertThat(CommonChild.commonChild("SHINCHAN", "NOHARAAA")).isEqualTo(3);
+        assertThat(CommonChild.commonChild("ABCDEF", "FBDAMN")).isEqualTo(2);
+        assertThat(CommonChild.commonChild("HARRY", "SALLY")).isEqualTo(2);
+        assertThat(CommonChild.commonChild("AA", "BB")).isEqualTo(0);
     }
 
 }

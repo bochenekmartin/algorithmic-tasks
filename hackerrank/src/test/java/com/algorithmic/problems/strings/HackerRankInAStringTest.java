@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class HackerRankInAStringTest {
 
     @Test
-    public void name() throws Exception {
+    void name() {
         Assertions.assertThat(HackerRankInAString.doIt("hereiamstackerrank")).isEqualTo("YES");
         Assertions.assertThat(HackerRankInAString.doIt("haacckkerrannkk ")).isEqualTo("YES");
         Assertions.assertThat(HackerRankInAString.doIt("hackerworld")).isEqualTo("NO");

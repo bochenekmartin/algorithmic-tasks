@@ -1,4 +1,4 @@
-package com.martin.jmh;
+package com.experiments.jmh;
 
 import com.google.common.base.Splitter;
 

@@ -11,7 +11,7 @@ public class WeightedUniformStringsTest {
     WeightedUniformStrings underTest = new WeightedUniformStrings();
 
     @Test
-    public void shouldReturnWeightsOfString() {
+    void shouldReturnWeightsOfString() {
         //given
         String input = "abccddde";
 

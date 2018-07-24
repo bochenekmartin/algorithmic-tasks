@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 
-public class BestProfitTest {
+class BestProfitTest {
 
     private final BestProfit underTest = new BestProfit();
 
     @Test
-    public void shouldCalculateBestProfit() {
+    void shouldCalculateBestProfit() {
         //given
         int[] stockPricesYesterday = {38, 37, 35, 31, 20, 24, 35, 21, 24, 21, 23, 20, 23, 25, 27};
 
@@ -22,7 +22,7 @@ public class BestProfitTest {
     }
 
     @Test
-    public void shouldCalculateBestProfitOptimal() {
+    void shouldCalculateBestProfitOptimal() {
         //given
         int[] stockPricesYesterday = {38, 37, 35, 31, 20, 24, 35, 21, 24, 21, 23, 20, 23, 25, 27};
 
