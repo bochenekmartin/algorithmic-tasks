@@ -1,6 +1,12 @@
 package com.algorithmic.problems.strings;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 // dostaje stringa (jakis tekst) i drugi parametr to tablica wyrazow - trzeba
 // zwrocic najkrotszy substring zawierajacy te wyrazy z tablicy

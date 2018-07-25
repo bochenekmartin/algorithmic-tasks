@@ -7,6 +7,28 @@ public class Trees {
     private Trees() {
     }
 
+    public static TreeNode createUnbalancedTree() {
+          /*
+        1
+       / \
+      2   3
+     / |
+    4   5
+     \
+      10
+        */
+
+        TreeNode root = new TreeNode(1);
+        TreeNode left = new TreeNode(2);
+        TreeNode left1 = new TreeNode(4);
+        left1.right = new TreeNode(10);
+        left.left = left1;
+        left.right = new TreeNode(5);
+        root.left = left;
+        root.right = new TreeNode(3);
+        return root;
+    }
+
     public static TreeNode createT1() {
           /*
         1
@@ -44,6 +66,27 @@ public class Trees {
         return root;
     }
 
+    public static TreeNode createSymmetric() {
+          /*
+
+        1
+       / \
+      2   2
+     /    \
+    3      3
+   /        \
+  4          4
+        */
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.left.left = new TreeNode(3);
+        root.left.left.left = new TreeNode(4);
+        root.right = new TreeNode(2);
+        root.right.right = new TreeNode(3);
+        root.right.right.right = new TreeNode(4);
+        return root;
+    }
+
     public static TreeNode createT4() {
           /*
 
@@ -61,7 +104,7 @@ public class Trees {
         return root;
     }
 
-    public static TreeNode createT3() {
+    public static TreeNode createSymmetric2() {
           /*
 
          1
