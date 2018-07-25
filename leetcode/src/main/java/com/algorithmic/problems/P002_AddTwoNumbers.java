@@ -1,21 +1,10 @@
 package com.algorithmic.problems;
 
+import com.algorithmic.model.ListNode;
+
 import java.math.BigInteger;
 
-//2
-public class P02_AddTwoNumbers {
-
-    /**
-     * Definition for singly-linked list.
-     */
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        public ListNode(int x) {
-            val = x;
-        }
-    }
+public class P002_AddTwoNumbers {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         BigInteger result = toInt(l1).add(toInt(l2));

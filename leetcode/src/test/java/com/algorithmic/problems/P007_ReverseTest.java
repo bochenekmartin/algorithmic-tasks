@@ -3,9 +3,9 @@ package com.algorithmic.problems;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class P07_ReverseTest {
+public class P007_ReverseTest {
 
-    final P07_Reverse underTest = new P07_Reverse();
+    final P007_Reverse underTest = new P007_Reverse();
 
     @Test
     public void reverse() throws Exception {

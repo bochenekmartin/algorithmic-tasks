@@ -6,7 +6,7 @@ import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class WeightedUniformStringsTest {
+class WeightedUniformStringsTest {
 
     WeightedUniformStrings underTest = new WeightedUniformStrings();
 

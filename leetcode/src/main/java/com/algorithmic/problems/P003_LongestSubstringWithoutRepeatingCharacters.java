@@ -3,7 +3,7 @@ package com.algorithmic.problems;
 import java.util.HashSet;
 import java.util.Set;
 
-public class P03_LongestSubstringWithoutRepeatingCharacters {
+public class P003_LongestSubstringWithoutRepeatingCharacters {
 
     public int lengthOfLongestSubstring(String s) {
         int n = s.length();

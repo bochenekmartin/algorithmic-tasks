@@ -2,7 +2,7 @@ package com.algorithmic.problems;
 
 //7
 
-public class P07_Reverse {
+public class P007_Reverse {
 
     public int reverse(int x) {
         String parsed = Integer.toString(x);

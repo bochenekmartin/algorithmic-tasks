@@ -4,7 +4,7 @@ package com.algorithmic.problems;
 
 import java.util.List;
 
-public class P01_TwoSum {
+public class P001_TwoSum {
 
     public int[] twoSum(List<Integer> numsArg, int target) {
         Integer[] ints = new Integer[numsArg.size()];

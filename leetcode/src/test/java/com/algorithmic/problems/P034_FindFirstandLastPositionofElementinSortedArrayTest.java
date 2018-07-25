@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class P34_FindFirstandLastPositionofElementinSortedArrayTest {
+class P034_FindFirstandLastPositionofElementinSortedArrayTest {
 
     @Test
     void searchRange() {
-        P34_FindFirstandLastPositionofElementinSortedArray test = new P34_FindFirstandLastPositionofElementinSortedArray();
+        P034_FindFirstandLastPositionofElementinSortedArray test = new P034_FindFirstandLastPositionofElementinSortedArray();
         int[] ints = test.searchRange(new int[]{5, 7, 7, 8, 8, 10}, 8);
         assertEquals(ints[0], 3);
         assertEquals(ints[1], 4);

@@ -1,6 +1,6 @@
 package com.algorithmic.problems;
 
-public class P66_PlusOne {
+public class P066_PlusOne {
 
     public int[] plusOne(int[] digits) {
         if (digits[digits.length - 1] < 9) {

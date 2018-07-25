@@ -2,7 +2,7 @@ package com.algorithmic.problems;
 
 import java.util.Arrays;
 
-public class P34_FindFirstandLastPositionofElementinSortedArray {
+public class P034_FindFirstandLastPositionofElementinSortedArray {
 
     public int[] searchRange(int[] nums, int target) {
         int i = Arrays.binarySearch(nums, target);

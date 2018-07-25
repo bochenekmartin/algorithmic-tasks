@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class P66_PlusOneTest {
+class P066_PlusOneTest {
 
-    P66_PlusOne test = new P66_PlusOne();
+    P066_PlusOne test = new P066_PlusOne();
 
     @Test
     void plusOne() {
