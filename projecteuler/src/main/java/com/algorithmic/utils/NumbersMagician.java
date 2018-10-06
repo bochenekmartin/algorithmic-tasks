@@ -1,6 +1,10 @@
 package com.algorithmic.utils;
 
+import com.google.common.collect.Lists;
+
 import java.math.BigInteger;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * User: Martin Bochenek (SG0212051)
@@ -8,8 +12,9 @@ import java.math.BigInteger;
  */
 public class NumbersMagician {
 
-    private int[] factorialsOfDigits = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880};
-    private StringBuilder stringBuilder = new StringBuilder();
+    private static final List<Integer> factorialsOfDigits = Collections.unmodifiableList(
+            Lists.newArrayList(1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880));
+    private final StringBuilder stringBuilder = new StringBuilder();
 
     public boolean isCurious(int candidate) {
         char[] chars = Integer.toString(candidate).toCharArray();
@@ -21,7 +26,7 @@ public class NumbersMagician {
 
         int sumOfFactorials = 0;
         for (int digit : digits) {
-            sumOfFactorials += factorialsOfDigits[digit];
+            sumOfFactorials += factorialsOfDigits.get(digit);
         }
 
         return candidate == sumOfFactorials;
