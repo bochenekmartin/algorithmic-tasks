@@ -4,8 +4,8 @@ import java.math.BigInteger;
 
 public class NumbersCreator {
 
-    BigInteger TWO = new BigInteger("2");
-    BigInteger THREE = new BigInteger("3");
+    private static final BigInteger TWO = new BigInteger("2");
+    private static final BigInteger THREE = new BigInteger("3");
 
     public BigInteger triangleNumber(long n) {
         long inc = n + 1;

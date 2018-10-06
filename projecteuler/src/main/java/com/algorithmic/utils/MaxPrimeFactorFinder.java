@@ -17,7 +17,7 @@ public class MaxPrimeFactorFinder {
     }
 
     private List<Long> findPrimeFactors(long number) { //find issue!
-        List<Long> primeFactors = new ArrayList<Long>();
+        List<Long> primeFactors = new ArrayList<>();
         long p = 2L;
         double g = Math.sqrt(number);
         while (p <= g) {
