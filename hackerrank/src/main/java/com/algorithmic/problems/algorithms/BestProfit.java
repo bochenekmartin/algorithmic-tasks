@@ -13,7 +13,7 @@ public class BestProfit {
     }
 
     int getMaxProfit(int... stockPricesYesterday) {
-        int bestDeal = -1;
+        var bestDeal = -1;
         for (int i = 0; i < stockPricesYesterday.length - 1; i++) {
             int buy = stockPricesYesterday[i];
             for (int j = i + 1; j < stockPricesYesterday.length; j++) {
